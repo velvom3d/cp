@@ -1,4 +1,4 @@
-import { Droplets, Scissors, Sparkles, Hand, Ear, Smile } from 'lucide-react'
+import { Droplets, Scissors, Sparkles, Hand, Ear, Smile, Shield, Check } from 'lucide-react'
 
 const iconMap = {
   droplets: Droplets,
@@ -7,6 +7,7 @@ const iconMap = {
   hand: Hand,
   ear: Ear,
   smile: Smile
+  shield: Shield
 }
 
 export default function ServiceCard({ service, onSelect, selected }) {

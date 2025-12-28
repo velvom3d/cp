@@ -1,9 +1,9 @@
 // Shop Configuration
 export const SHOP_CONFIG = {
-  name: "Pawsome Grooming Studio",
+  name: "DogStudio",
   tagline: "Where Every Pet Gets the Royal Treatment",
   phone: "+91 98765 43210",
-  email: "hello@pawsomestudio.com",
+  email: "hello@dogstudio.com",
   address: "123, Pet Paradise Lane, Koramangala, Bangalore - 560034",
   workingHours: {
     weekdays: "9:00 AM - 7:00 PM",
@@ -62,6 +62,42 @@ export const SERVICES = [
     price: 300,
     duration: "15 mins",
     icon: "smile"
+  },
+  {
+    id: "spa-bath-puppy",
+    name: "Spa Bath - Puppy",
+    description: "Complete spa package for puppies",
+    price: 700,
+    duration: "60 mins",
+    icon: "sparkles",
+    features: ["Bath with Shampoo & Conditioner","Blow Dry","Nail Clipping","Ear Cleaning","Paw Massage","Combing/Brushing","Mouth Spray"]
+  },
+  {
+    id: "spa-bath-adult",
+    name: "Spa Bath - Adult",
+    description: "Complete spa package for adult pets",
+    price: 1000,
+    duration: "90 mins",
+    icon: "sparkles",
+    features: ["Bath with Shampoo & Conditioner","Blow Dry","Nail Clipping","Ear Cleaning","Paw Massage","Combing/Brushing","Mouth Spray"]
+  },
+  {
+    id: "tick-treatment",
+    name: "Tick Treatment",
+    description: "Professional tick removal and treatment",
+    price: 600,
+    duration: "30 mins",
+    icon: "shield",
+    isAddon: true
+  },
+  {
+    id: "dematting",
+    name: "Dematting",
+    description: "Careful removal of mats and tangles from fur",
+    price: 500,
+    duration: "45 mins",
+    icon: "scissors",
+    isAddon: true
   }
 ]
 
