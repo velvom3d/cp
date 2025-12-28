@@ -10,6 +10,7 @@ import toast from 'react-hot-toast'
 import { useAuth } from '../context/AuthContext'
 import { bookingService } from '../lib/supabase'
 import { BOOKING_STATUSES, SHOP_CONFIG } from '../lib/constants'
+import { sendStatusUpdateEmail } from '../lib/statusEmail'
 
 export default function AdminDashboard() {
   const navigate = useNavigate()
@@ -37,10 +38,13 @@ export default function AdminDashboard() {
 
   const updateStatus = async (id, newStatus) => {
     try {
+      const booking = bookings.find(b => b.id === id)
       await bookingService.updateBookingStatus(id, newStatus)
       setBookings(prev =>
         prev.map(b => b.id === id ? { ...b, status: newStatus } : b)
       )
+      
+      sendStatusUpdateEmail(booking, newStatus)
       toast.success(`Booking ${newStatus}`)
     } catch (error) {
       console.error('Error updating status:', error)
