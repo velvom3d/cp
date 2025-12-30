@@ -3,7 +3,7 @@ export const SHOP_CONFIG = {
   name: "DogStudio",
   tagline: "Where Every Pet Gets the Royal Treatment",
   phone: "+91 98765 43210",
-  email: "hello@dogstudio.com",
+  email: "pratishchandran7@gmail.com",
   address: "123, Pet Paradise Lane, Koramangala, Bangalore - 560034",
   workingHours: {
     weekdays: "9:00 AM - 7:00 PM",
@@ -19,15 +19,15 @@ export const SERVICES = [
     id: "bath",
     name: "Bath & Dry",
     description: "Complete bathing with premium shampoo and blow dry",
-    price: 500,
+    price: 699,
     duration: "45 mins",
     icon: "droplets"
   },
   {
     id: "haircut",
-    name: "Haircut & Styling",
+    name: "Face correction",
     description: "Professional haircut and breed-specific styling",
-    price: 800,
+    price: 600,
     duration: "60 mins",
     icon: "scissors"
   },
@@ -35,7 +35,7 @@ export const SERVICES = [
     id: "full-grooming",
     name: "Full Grooming Package",
     description: "Bath, haircut, nail trim, ear cleaning & teeth brushing",
-    price: 1500,
+    price: 1699,
     duration: "90 mins",
     icon: "sparkles"
   },
@@ -51,7 +51,7 @@ export const SERVICES = [
     id: "ear-cleaning",
     name: "Ear Cleaning",
     description: "Gentle ear cleaning and inspection",
-    price: 250,
+    price: 200,
     duration: "20 mins",
     icon: "ear"
   },
@@ -67,7 +67,7 @@ export const SERVICES = [
     id: "spa-bath-puppy",
     name: "Spa Bath - Puppy",
     description: "Complete spa package for puppies",
-    price: 700,
+    price: 1099,
     duration: "60 mins",
     icon: "sparkles",
     features: ["Bath with Shampoo & Conditioner","Blow Dry","Nail Clipping","Ear Cleaning","Paw Massage","Combing/Brushing","Mouth Spray"]
@@ -76,7 +76,7 @@ export const SERVICES = [
     id: "spa-bath-adult",
     name: "Spa Bath - Adult",
     description: "Complete spa package for adult pets",
-    price: 1000,
+    price: 1399,
     duration: "90 mins",
     icon: "sparkles",
     features: ["Bath with Shampoo & Conditioner","Blow Dry","Nail Clipping","Ear Cleaning","Paw Massage","Combing/Brushing","Mouth Spray"]
